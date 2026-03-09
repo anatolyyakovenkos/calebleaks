@@ -1,0 +1,1542 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" data-scrapbook-source="https://bitcointalk.org/index.php?topic=5315036.0" data-scrapbook-create="20260301221638096"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="[ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain">
+	<meta http-equiv="Content-Language" content="en">
+	<meta name="keywords" content="bitcoin, forum, bitcoin forum, bitcointalk">
+	
+	
+	<title>[ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</title><!--2f7cf32ae3c86593b89ac0073966ba3bec52cda1f779f32ae3c86593b89ac0073966ba3bec52f189e5eb99874ce736baf32ae3c86593b89ac0073966ba3bec52e40df1a439eff32ae3c86593b89ac0073966ba3bec52ae27-->
+	<link rel="stylesheet" type="text/css" href="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/style.css">
+	 <!--[if !IE]> -->
+	 <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 320px) and (max-device-width: 650px)" href="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/mobile.css">
+	 <!-- <![endif]-->
+	<link rel="stylesheet" type="text/css" href="urn:scrapbook:download:error:https://bitcointalk.org/Themes/default/print.css" media="print"><style type="text/css">
+.msgcl1 {padding: 1px 1px 0 1px;}
+
+</style>
+
+
+
+	<link rel="help" href="https://bitcointalk.org/index.php?action=help" target="_blank">
+	<link rel="search" href="https://bitcointalk.org/index.php?action=search">
+	<link rel="contents" href="https://bitcointalk.org/index.php">
+	<link rel="alternate" type="application/rss+xml" title="Bitcoin Forum - RSS" href="https://bitcointalk.org/index.php?type=rss;action=.xml">
+	<link rel="prev" href="https://bitcointalk.org/index.php?topic=5315036.0;prev_next=prev">
+	<link rel="next" href="https://bitcointalk.org/index.php?topic=5315036.0;prev_next=next">
+	<link rel="index" href="https://bitcointalk.org/index.php?board=159.0"><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+
+
+	
+		</head>
+<body>
+	<div class="tborder">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" id="smfheader">
+			<tbody><tr>
+				<td class="catbg" height="32">
+					<span style="font-family: Verdana, sans-serif; font-size: 140%; ">Bitcoin Forum</span>
+				</td>
+				<td align="right" class="catbg">
+					<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/smflogo.gif" style="margin: 2px;" alt="">
+				</td>
+			</tr>
+		</tbody></table>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tbody><tr>
+				<td class="titlebg2" height="32" align="right">
+					<span class="smalltext">March 01, 2026, 09:58:09 PM</span>
+					<a href="#"><img id="upshrink" src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/upshrink.gif" alt="*" title="Shrink or expand the header." align="bottom" style="margin: 0 1ex;"></a>
+				</td>
+			</tr>
+			<tr id="upshrinkHeader">
+				<td valign="top" colspan="2">
+					<table width="100%" class="bordercolor" cellpadding="8" cellspacing="1" border="0" style="margin-top: 1px;">
+						<tbody><tr>
+							<td colspan="2" width="100%" valign="top" class="windowbg2" id="variousheadlinks"><span class="middletext">Welcome, <b>Guest</b>. Please <a href="https://bitcointalk.org/index.php?action=login">login</a> or <a href="https://bitcointalk.org/index.php?action=register">register</a>.				</span>
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+		<table id="upshrinkHeader2" width="100%" cellpadding="4" cellspacing="0" border="0">
+			<tbody><tr>
+				<td width="90%" class="titlebg2">
+					<span class="smalltext"><b>News</b>: Latest Bitcoin Core release: <a class="ul" href="https://bitcoincore.org/en/download/">30.2</a> [<a class="ul" href="https://bitcointalk.org/bitcoin-30.2.torrent">Torrent</a>]</span>
+				</td>
+				<td class="titlebg2" align="right" nowrap="nowrap" valign="top">
+					<form action="https://bitcointalk.org/index.php?action=search2" method="post" accept-charset="ISO-8859-1" style="margin: 0;">
+						<a href="https://bitcointalk.org/index.php?action=search;advanced"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/filter.gif" align="middle" style="margin: 0 1ex;" alt=""></a>
+						<input type="text" name="search" value="" style="width: 190px;">&nbsp;
+						<input type="submit" name="submit" value="Search" style="width: 11ex;">
+						<input type="hidden" name="advanced" value="0">
+						<input type="hidden" name="topic" value="5315036">
+					</form>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+			<table cellpadding="0" cellspacing="0" border="0" style="margin-left: 10px;">
+				<tbody><tr>
+					<td class="maintab_first">&nbsp;</td><td class="maintab_active_first">&nbsp;</td>
+				<td valign="top" class="maintab_active_back">
+					<a href="https://bitcointalk.org/index.php">Home</a>
+				</td><td class="maintab_active_last">&nbsp;</td>
+				<td valign="top" class="maintab_back">
+					<a href="https://bitcointalk.org/index.php?action=help">Help</a>
+				</td>
+				<td valign="top" class="maintab_back">
+					<a href="https://bitcointalk.org/index.php?action=search">Search</a>
+				</td>
+				<td valign="top" class="maintab_back">
+					<a href="https://bitcointalk.org/index.php?action=login">Login</a>
+				</td>
+				<td valign="top" class="maintab_back">
+					<a href="https://bitcointalk.org/index.php?action=register">Register</a>
+				</td>
+				<td valign="top" class="maintab_back">
+					<a href="https://bitcointalk.org/more.php">More</a>
+				</td>
+				<td class="maintab_last">&nbsp;</td>
+			</tr>
+		</tbody></table>
+	<div id="bodyarea" style="padding: 1ex 0px 2ex 0px;">
+<a name="top"></a>
+<a name="msg56278088"></a>
+<div><div class="nav" style="font-size: smaller; margin-bottom: 2ex; margin-top: 2ex;"><b><a href="https://bitcointalk.org/index.php" class="nav">Bitcoin Forum</a></b>&nbsp;&gt;&nbsp;<b><a href="https://bitcointalk.org/index.php#6" class="nav">Alternate cryptocurrencies</a></b>&nbsp;&gt;&nbsp;<b><a href="https://bitcointalk.org/index.php?board=159.0" class="nav">Announcements (Altcoins)</a></b>&nbsp;&gt;&nbsp;<b><a href="" class="nav">[ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></b></div></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tbody><tr>
+		<td class="middletext" valign="bottom" style="padding-bottom: 4px;">Pages:  [<b>1</b>] <a class="navPages" href="https://bitcointalk.org/index.php?topic=5315036.20">2</a> <span class="prevnext"><a class="navPages" href="https://bitcointalk.org/index.php?topic=5315036.20">»</a> </span>&nbsp;<a href="https://bitcointalk.org/index.php?topic=5315036.0;all">All</a> </td>
+		<td align="right" style="padding-right: 1ex;">
+			<div class="nav" style="margin-bottom: 2px;"> <a href="https://bitcointalk.org/index.php?topic=5315036.0;prev_next=prev#new">« previous topic</a> <a href="https://bitcointalk.org/index.php?topic=5315036.0;prev_next=next#new">next topic »</a></div>
+			<table cellpadding="0" cellspacing="0">
+				<tbody><tr>
+					
+		<td class="mirrortab_first">&nbsp;</td>
+		<td class="mirrortab_back"><a href="https://bitcointalk.org/index.php?action=printpage;topic=5315036.0" target="_blank">Print</a></td>
+		<td class="mirrortab_last">&nbsp;</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+<table width="100%" cellpadding="3" cellspacing="0" border="0" class="tborder" style="border-bottom: 0;">
+		<tbody><tr class="catbg3">
+				<td valign="middle" width="2%" style="padding-left: 6px;">
+					<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/topic/hot_post.gif" align="bottom" alt="">
+				</td>
+				<td width="13%"> Author</td>
+				<td valign="middle" width="85%" style="padding-left: 6px;" id="top_subject">
+						Topic: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain &nbsp;(Read 818 times)
+				</td>
+		</tr><tr>
+				<td colspan="3" class="smalltext"> This is a self-moderated topic. If you do not want to be moderated by the person who started this topic, create a new topic.  </td>
+		</tr>
+</tbody></table>
+<form action="https://bitcointalk.org/index.php?action=quickmod2;topic=5315036.0" method="post" accept-charset="ISO-8859-1" name="quickModForm" id="quickModForm" style="margin: 0;">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="bordercolor"><tbody><tr><td class="msgcl1">
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=3112410" title="View the profile of solana">solana</a></b> <span title="This member is the topic-starter" style="cursor: help;">(OP)</span>
+							<div class="smalltext">
+								Newbie<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 8<br>
+								Merit: 0<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=3112410"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56278088#msg56278088"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_56278088"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56278088#msg56278088">[ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext"><span title="Last edit: February 07, 2021, 09:59:51 PM by solana" class="edited">February 05, 2021, 11:20:28 PM</span><span class="editplain"><br>Last edit: February 07, 2021, 09:59:51 PM by solana</span></div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns1" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg56278088#msg56278088">#1</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post">Hey!<br><br>I noticed Solana doesn't have a Bitcointalk ANN, so as an avid supporter I thought I'd create one:<br>(this is community led, I am not directly affiliated with Solana)<br><br><b>Website:</b><br><a rel="ugc" class="ul" href="https://solana.com/">https://solana.com</a><br><br><b>Forum:</b><br><a rel="ugc" class="ul" href="https://forums.solana.com/">https://forums.solana.com</a><br><br><b>Explorers:</b><br><a rel="ugc" class="ul" href="https://explorer.solana.com/">https://explorer.solana.com</a><br><a rel="ugc" class="ul" href="https://solanabeach.io/">https://solanabeach.io</a><br><br><b>Curated list of Validators:</b><br><a rel="ugc" class="ul" href="https://www.validators.app/">https://www.validators.app</a><br><br><b>Source Code:</b><br><a rel="ugc" class="ul" href="https://github.com/solana-labs">https://github.com/solana-labs</a><br><br><b>Whitepaper:</b><br><a rel="ugc" class="ul" href="https://solana.com/solana-whitepaper.pdf">https://solana.com/solana-whitepaper.pdf</a><br><br><b>Discord:</b><br><a rel="ugc" class="ul" href="https://discord.gg/Rz737rP">https://discord.gg/Rz737rP</a><br><br><b>Telegram:</b><br><a rel="ugc" class="ul" href="https://t.me/solanaio">https://t.me/solanaio</a><br><br><b>What Is Solana (SOL)?</b><br>Solana is a highly functional open source project that banks on blockchain technology’s permissionless nature to provide decentralized finance (DeFi) solutions. While the idea and initial work on the project began in 2017, Solana was officially launched in March 2020 by the Solana Foundation with headquarters in Geneva, Switzerland.<br><br>The Solana protocol is designed to facilitate decentralized app (DApp) creation. It aims to improve scalability by introducing a proof-of-history (PoH) consensus combined with the underlying proof-of-stake (PoS) consensus of the blockchain.<br><br>Because of the innovative hybrid consensus model, Solana enjoys interest from small-time traders and institutional traders alike. A significant focus for the Solana Foundation is to make decentralized finance accessible on a larger scale.<br><br><b>Who Are the Founders of Solana?</b><br>Anatoly Yakovenko is the most important person behind Solana. His professional career started at Qualcomm, where he quickly moved up the ranks and became senior staff engineer manager in 2015. Later on, his professional path shifted, and Yakovenko entered a new position as a software engineer at Dropbox.<br><br>In 2017, Yakovenko started working on a project which would later materialize as Solana. He teamed up with his Qualcomm colleague Greg Fitzgerald, and they founded a project called Solana Labs. Attracting several more former Qualcomm colleagues in the process, the Solana protocol and SOL token were released to the public in 2020.<br><br><b>What Makes Solana Unique?</b><br>One of the essential innovations Solana brings to the table is the proof-of-history (PoH) consensus developed by Anatoly Yakovenko. This concept allows for greater scalability of the protocol, which in turn boosts usability.<br><br>Solana is known in the cryptocurrency space because of the incredibly short processing times the blockchain offers. Solana’s hybrid protocol allows for significantly decreased validation times for both transaction and smart contract execution. With lightning-fast processing times, Solana has attracted a lot of institutional interest as well.<br><br>The Solana protocol is intended to serve both small-time users and enterprise customers alike. One of Solana’s main promises to customers is that they will not be surprised by increased fees and taxes. The protocol is designed in such a way as to have low transaction costs while still guaranteeing scalability and fast processing.<br><br>Combined with the longstanding professional expertise creators Anatoly Yakovenko and Greg Fitzgerald bring to the project, Solana is ranked number 42 in the CoinMarketCap ranking as of February 2021.<br><br><br><b>Exchanges:</b><br><br><a rel="ugc" class="ul" href="https://www.binance.com/en/trade/SOL_BTC">https://www.binance.com/en/trade/SOL_BTC</a><br><a rel="ugc" class="ul" href="https://www.binance.com/en/trade/SOL_USDT">https://www.binance.com/en/trade/SOL_USDT</a><br><br><a rel="ugc" class="ul" href="https://www.okex.com/market?product=sol_btc">https://www.okex.com/market?product=sol_btc</a><br><a rel="ugc" class="ul" href="https://www.okex.com/market?product=sol_usdt">https://www.okex.com/market?product=sol_usdt</a><br><a rel="ugc" class="ul" href="https://www.okex.com/market?product=sol_eth">https://www.okex.com/market?product=sol_eth</a><br><br><a rel="ugc" class="ul" href="https://ftx.com/trade/SOL/USD">https://ftx.com/trade/SOL/USD</a><br><br><a rel="ugc" class="ul" href="https://bilaxy.com/trade/SOL_USDT">https://bilaxy.com/trade/SOL_USDT</a><br><br><a rel="ugc" class="ul" href="https://www.mxc.com/trade/easy#SOL_BTC">https://www.mxc.com/trade/easy#SOL_BTC</a><br><br><a rel="ugc" class="ul" href="https://www.bithumb.pro/en-us/spot/trade?q=SOL-BTC">https://www.bithumb.pro/en-us/spot/trade?q=SOL-BTC</a><br><br><a rel="ugc" class="ul" href="https://www.hotbit.io/exchange?symbol=SOL_USDT">https://www.hotbit.io/exchange?symbol=SOL_USDT</a><br><br><a rel="ugc" class="ul" href="https://bitmax.io/#/trade/usdt/sol">https://bitmax.io/#/trade/usdt/sol</a><br><br><a rel="ugc" class="ul" href="https://gate.io/trade/sol_usdt">https://gate.io/trade/sol_usdt</a><br><br><a rel="ugc" class="ul" href="https://hoo.com/spot/sol-usdt">https://hoo.com/spot/sol-usdt</a><br><br><a rel="ugc" class="ul" href="https://www.coinex.com/trading?currency=usdt&amp;dest=sol&amp;tab=limit">https://www.coinex.com/trading?currency=usdt&amp;dest=sol&amp;tab=limit</a><br><br><a rel="ugc" class="ul" href="https://dex.projectserum.com/#/">https://dex.projectserum.com/#/</a></div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_56278088">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg56278267"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=2588891" title="View the profile of Swagga82">Swagga82</a></b>
+							<div class="smalltext">
+								Copper Member<br>
+								Jr. Member<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 287<br>
+								Merit: 1<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=2588891"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="https://safecoin.org/" title="https://safecoin.org/"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/www_sm.gif" alt="WWW" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56278267#msg56278267"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_56278267"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56278267#msg56278267">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">February 05, 2021, 11:54:36 PM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns2" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg56278267#msg56278267">#2</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post" style="height: 37px;">Reserved</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_56278267">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg56278321"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=3062670" title="View the profile of SafeSwap">SafeSwap</a></b>
+							<div class="smalltext">
+								Newbie<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 4<br>
+								Merit: 0<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=3062670"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56278321#msg56278321"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_56278321"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56278321#msg56278321">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">February 06, 2021, 12:03:21 AM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns3" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg56278321#msg56278321">#3</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post"><div class="quoteheader"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56278088#msg56278088">Quote from: solana on February 05, 2021, 11:20:28 PM</a></div><div class="quote">Hey!<br><br>I noticed Solana doesn't have a Bitcointalk ANN, so as an avid supporter I thought I'd create one:<br>(this is community led, I am not directly affiliated with Solana)<br><br><b>Website:</b><br><a rel="ugc" class="ul" href="https://solana.org/">https://solana.org</a><br><br><b>Curated list of Validators:</b><br><a rel="ugc" class="ul" href="https://www.validators.app/">https://www.validators.app</a><br><br><b>What Is Solana (SOL)?</b><br>Solana is a highly functional open source project that banks on blockchain technology’s permissionless nature to provide decentralized finance (DeFi) solutions. While the idea and initial work on the project began in 2017, Solana was officially launched in March 2020 by the Solana Foundation with headquarters in Geneva, Switzerland.<br><br>The Solana protocol is designed to facilitate decentralized app (DApp) creation. It aims to improve scalability by introducing a proof-of-history (PoH) consensus combined with the underlying proof-of-stake (PoS) consensus of the blockchain.<br><br>Because of the innovative hybrid consensus model, Solana enjoys interest from small-time traders and institutional traders alike. A significant focus for the Solana Foundation is to make decentralized finance accessible on a larger scale.<br><br><b>Who Are the Founders of Solana?</b><br>Anatoly Yakovenko is the most important person behind Solana. His professional career started at Qualcomm, where he quickly moved up the ranks and became senior staff engineer manager in 2015. Later on, his professional path shifted, and Yakovenko entered a new position as a software engineer at Dropbox.<br><br>In 2017, Yakovenko started working on a project which would later materialize as Solana. He teamed up with his Qualcomm colleague Greg Fitzgerald, and they founded a project called Solana Labs. Attracting several more former Qualcomm colleagues in the process, the Solana protocol and SOL token were released to the public in 2020.<br><br><b>What Makes Solana Unique?</b><br>One of the essential innovations Solana brings to the table is the proof-of-history (PoH) consensus developed by Anatoly Yakovenko. This concept allows for greater scalability of the protocol, which in turn boosts usability.<br><br>Solana is known in the cryptocurrency space because of the incredibly short processing times the blockchain offers. Solana’s hybrid protocol allows for significantly decreased validation times for both transaction and smart contract execution. With lightning-fast processing times, Solana has attracted a lot of institutional interest as well.<br><br>The Solana protocol is intended to serve both small-time users and enterprise customers alike. One of Solana’s main promises to customers is that they will not be surprised by increased fees and taxes. The protocol is designed in such a way as to have low transaction costs while still guaranteeing scalability and fast processing.<br><br>Combined with the longstanding professional expertise creators Anatoly Yakovenko and Greg Fitzgerald bring to the project, Solana is ranked number 42 in the CoinMarketCap ranking as of February 2021.<br></div><br><br>Wow, about time!<br><br>Hottest blockchain in crypto probably needs an ANN lol.</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_56278321">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg56278453"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=3112410" title="View the profile of solana">solana</a></b> <span title="This member is the topic-starter" style="cursor: help;">(OP)</span>
+							<div class="smalltext">
+								Newbie<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 8<br>
+								Merit: 0<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=3112410"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56278453#msg56278453"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_56278453"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56278453#msg56278453">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">February 06, 2021, 12:52:22 AM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns4" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg56278453#msg56278453">#4</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post" style="height: 37px;">Seems that way, we'll give it the love it deserves</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_56278453">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg56290394"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=805820" title="View the profile of Lafu">Lafu</a></b>
+							<div class="smalltext">
+								Legendary<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/legendary.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useron.gif" alt="Online" border="0" style="margin-top: 2px;"><span class="smalltext"> Online</span><br><br>
+								Activity: 3528<br>
+								Merit: 4427<br><br>
+								<div style="overflow: auto; width: 100%;"><img src="urn:scrapbook:download:error:https://bitcointalk.org/useravatars/avatar_805820.png" alt="" class="avatar" border="0"></div><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=805820"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56290394#msg56290394"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_56290394"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56290394#msg56290394">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">February 07, 2021, 01:13:28 PM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns5" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg56290394#msg56290394">#5</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post">Your Website link that you have posted and written dosnt work or is broken ! <br>Also the link to the Whitepaper dosnt work !<br><br>Website: <a class="ul" href="https://solana.org/">https://solana.org</a><br>Whitepaper: <a class="ul" href="https://solana.io/solana-whitepaper.pdf">https://solana.io/solana-whitepaper.pdf</a><br><br>Dont know if there is an issue on your Webpage or server that the links dosnt work , but maybe you can fix that.<br>Was on the way to read the Whitepaper but cant as its not working.<br></div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_56290394">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg56292437"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=552299" title="View the profile of Miiike">Miiike</a></b>
+							<div class="smalltext">
+								Legendary<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/legendary.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 2030<br>
+								Merit: 1059<br><br>
+								<div style="overflow: auto; width: 100%;"><img src="urn:scrapbook:download:error:https://bitcointalk.org/useravatars/avatar_552299.png" alt="" class="avatar" border="0"></div><br>
+								Wait... What?<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=552299"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56292437#msg56292437"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_56292437"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56292437#msg56292437">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">February 07, 2021, 05:30:29 PM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns6" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg56292437#msg56292437">#6</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post"><div class="quoteheader"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56278088#msg56278088">Quote from: solana on February 05, 2021, 11:20:28 PM</a></div><div class="quote">Hey!<br><br>I noticed Solana doesn't have a Bitcointalk ANN, so as an avid supporter I thought I'd create one:<br>(this is community led, I am not directly affiliated with Solana)<br><br>--snip--<br></div><br>What we got here? As an "avid supporter", you seems quite hesitant yo use your own account to show your support that you specifically created a new account to post on their behalf. And why the self moderated? If it is community led (and oriented), shouldn't the community has the freedom to post?</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_56292437">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg56294032"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=3112410" title="View the profile of solana">solana</a></b> <span title="This member is the topic-starter" style="cursor: help;">(OP)</span>
+							<div class="smalltext">
+								Newbie<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 8<br>
+								Merit: 0<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=3112410"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56294032#msg56294032"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_56294032"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56294032#msg56294032">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">February 07, 2021, 10:01:56 PM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns7" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg56294032#msg56294032">#7</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post"><div class="quoteheader"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56290394#msg56290394">Quote from: Lafu on February 07, 2021, 01:13:28 PM</a></div><div class="quote">Your Website link that you have posted and written dosnt work or is broken ! <br>Also the link to the Whitepaper dosnt work !<br><br>Website: <a rel="ugc" class="ul" href="https://solana.org/">https://solana.org</a><br>Whitepaper: <a rel="ugc" class="ul" href="https://solana.io/solana-whitepaper.pdf">https://solana.io/solana-whitepaper.pdf</a><br><br>Dont know if there is an issue on your Webpage or server that the links dosnt work , but maybe you can fix that.<br>Was on the way to read the Whitepaper but cant as its not working.<br><br></div><br>Thank you very much for your feedback!&nbsp; &nbsp;Both links are corrected,&nbsp; please let me know if you catch anything else or would like other improvements/additions.<br><br>Would really like to get Solana discussion going on Bitcointalk&nbsp; <img src="urn:scrapbook:download:error:https://bitcointalk.org/Smileys/default/smiley.gif" alt="Smiley" border="0"></div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_56294032">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg56325596"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=3112410" title="View the profile of solana">solana</a></b> <span title="This member is the topic-starter" style="cursor: help;">(OP)</span>
+							<div class="smalltext">
+								Newbie<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 8<br>
+								Merit: 0<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=3112410"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56325596#msg56325596"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_56325596"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56325596#msg56325596">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">February 11, 2021, 10:06:47 PM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns8" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg56325596#msg56325596">#8</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post"><br><br><a rel="ugc" class="ul" href="https://twitter.com/solana/status/1356634726178709510">https://twitter.com/solana/status/1356634726178709510</a><br><br><br>Anyone up for joining this? <br><br>I'm considering a last minute entry or team myself.</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_56325596">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg56605417"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=494856" title="View the profile of Mrpumperitis">Mrpumperitis</a></b>
+							<div class="smalltext">
+								Legendary<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/legendary.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 2856<br>
+								Merit: 1075<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=494856"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56605417#msg56605417"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_56605417"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56605417#msg56605417">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">March 19, 2021, 07:31:56 PM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns9" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg56605417#msg56605417">#9</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post">Agree with OP, Bitcointalk needs a Solana thread.<br><br>Ive been posting regular SOL updates on this thread (unmoderated)<br><a class="ul" href="https://bitcointalk.org/index.php?topic=5255462.60">https://bitcointalk.org/index.php?topic=5255462.60</a><br>i will now start cross posting SOL news here too. &nbsp;<img src="urn:scrapbook:download:error:https://bitcointalk.org/Smileys/default/smiley.gif" alt="Smiley" border="0"><br></div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_56605417">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+							<hr width="100%" size="1" class="hrcolor">
+							<div class="signature sig494856">Bitcoin - Blockchain 1.0 (2009)<br>Ethereum - Blockchain 2.0 (2015)<br>Partisia - Blockchain 3.0&nbsp; (2021)</div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg56605420"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=494856" title="View the profile of Mrpumperitis">Mrpumperitis</a></b>
+							<div class="smalltext">
+								Legendary<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/legendary.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 2856<br>
+								Merit: 1075<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=494856"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56605420#msg56605420"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_56605420"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56605420#msg56605420">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">March 19, 2021, 07:32:43 PM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns10" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg56605420#msg56605420">#10</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post">BTC - Blockchain 1.0 (2009)<br><img class="userimg " src="urn:scrapbook:download:error:https://ip.bitcointalk.org/?u=https%3A%2F%2Fwww.picotech.com%2Fimages%2Fuploads%2Fexperiments%2F_sml%2Fsubaru_track1.gif&amp;t=683&amp;c=1yJFKrLjmy8kEw" alt="" border="0"> <br><br><br>ETH - Blockchain 2.0 (2015)<br><img class="userimg " src="urn:scrapbook:download:error:https://ip.bitcointalk.org/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2Fv4hFO35n0vtvy%2Fgiphy.gif&amp;t=683&amp;c=mglCQwIxuzDMlA" alt="" border="0"> <br><br><br>SOL &nbsp; &nbsp;Blockchain 3.0 &nbsp;(2020)<br><img class="userimg " src="urn:scrapbook:download:error:https://ip.bitcointalk.org/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2Fa43f32f6f28cc7dda72b9bda4766bae6%2Ftenor.gif%3Fitemid%3D11949099&amp;t=683&amp;c=f90L8YyzECxyPw" alt="" border="0"> &nbsp;<br><br><br>&nbsp;<img src="urn:scrapbook:download:error:https://bitcointalk.org/Smileys/default/smiley.gif" alt="Smiley" border="0"></div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_56605420">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+							<hr width="100%" size="1" class="hrcolor">
+							<div class="signature sig494856">Bitcoin - Blockchain 1.0 (2009)<br>Ethereum - Blockchain 2.0 (2015)<br>Partisia - Blockchain 3.0&nbsp; (2021)</div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg56605769"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=494856" title="View the profile of Mrpumperitis">Mrpumperitis</a></b>
+							<div class="smalltext">
+								Legendary<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/legendary.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 2856<br>
+								Merit: 1075<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=494856"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56605769#msg56605769"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_56605769"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56605769#msg56605769">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">March 19, 2021, 08:27:02 PM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns11" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg56605769#msg56605769">#11</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post"><a class="ul" href="https://twitter.com/RajGokal/status/1372910293047738377">https://twitter.com/RajGokal/status/1372910293047738377</a><br>RajGokal<br>what should the next @solanahackathon be focused on? <br><br><br><br>I think....<br>1- Privacy ( call em Dark Sols )<br>2- Gaming <br>3- Payments</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_56605769">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+							<hr width="100%" size="1" class="hrcolor">
+							<div class="signature sig494856">Bitcoin - Blockchain 1.0 (2009)<br>Ethereum - Blockchain 2.0 (2015)<br>Partisia - Blockchain 3.0&nbsp; (2021)</div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg56622329"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=494856" title="View the profile of Mrpumperitis">Mrpumperitis</a></b>
+							<div class="smalltext">
+								Legendary<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/legendary.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 2856<br>
+								Merit: 1075<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=494856"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56622329#msg56622329"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_56622329"><a href="https://bitcointalk.org/index.php?topic=5315036.msg56622329#msg56622329">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">March 22, 2021, 05:09:31 AM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns12" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg56622329#msg56622329">#12</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post"><a class="ul" href="https://twitter.com/sinoglobalcap/status/1373662706708983814">https://twitter.com/sinoglobalcap/status/1373662706708983814</a><br>Replying to<br>@sinoglobalcap<br>...the way. Additionally, Ethereum compatible execution environments are coming to Solana, which will make it as portable as an EVM-based layer 2. <br><br><br><br>KingPonzi<br><br>Yes, Andre actually asked Anatoly in a DeFi clubhouse a few weeks back and Anatoly said it’s been in progress for awhile but doesn’t know how much longer it will take.<br><br><br></div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_56622329">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+							<hr width="100%" size="1" class="hrcolor">
+							<div class="signature sig494856">Bitcoin - Blockchain 1.0 (2009)<br>Ethereum - Blockchain 2.0 (2015)<br>Partisia - Blockchain 3.0&nbsp; (2021)</div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg57215043"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=9645" title="View the profile of mich">mich</a></b>
+							<div class="smalltext">
+								Legendary<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/legendary.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 3654<br>
+								Merit: 1037<br><br>
+								<div style="overflow: auto; width: 100%;"><img src="urn:scrapbook:download:error:https://bitcointalk.org/useravatars/avatar_9645.png" alt="" class="avatar" border="0"></div><br>
+								#1 VIP Crypto Casino<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=9645"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg57215043#msg57215043"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_57215043"><a href="https://bitcointalk.org/index.php?topic=5315036.msg57215043#msg57215043">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">June 12, 2021, 07:11:15 AM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns13" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg57215043#msg57215043">#13</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post">SOL raised $314 in its recent token sale and now listed on Coinbase.<br><br><a class="ul" href="https://www.coindesk.com/solana-labs-raises-314m-in-token-sale-led-by-a16z-polychain">https://www.coindesk.com/solana-labs-raises-314m-in-token-sale-led-by-a16z-polychain</a></div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_57215043">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+							<hr width="100%" size="1" class="hrcolor">
+							<div class="signature sig9645"><div align="center"><table style="font: inherit; color: inherit;"><tbody><tr><td valign="top" style="font: inherit; color: inherit;"><a rel="ugc" class="ul" href="https://bitcasino.io/"><span style="font-size: 2pt !important; line-height: 1.3em;"><span style="color: #f50;">█████████████████████████<br>███████████▄█████████████<br>██████▀░▀█▀░▀█▀░▀████████<br>███████▄███▄███▄█████████<br>████▀██▀██▀░▀████▀░▀█████<br>███████████░███▀██▄██████<br>████▀██▀██░░░█░░░████████<br>███████████░███▄█▀░▀█████<br>████▀██▀██▄░▄███▄░░░▄████<br>███████▀███▀███▀██▄██████<br>██████▄░▄█▄░▄█▄░▄████████<br>███████████▀█████████████<br>█████████████████████████</span></span></a></td><td valign="top" style="font: inherit; color: inherit;"><a rel="ugc" class="ul" href="https://bitcasino.io/"><span style="font-size: 1px !important; line-height: 1.3em;">&nbsp;<br><span style="font-family: arial black;"><span style="font-size: 24pt !important; line-height: 1.3em;"><span style="background-color: #f50;"><span style="color: #f50;">.<span style="font-size: 5pt !important; line-height: 1.3em;"><sup><span style="font-family: tahoma,arial;"><span style="font-size: 21pt !important; line-height: 1.3em;"><span style="color: #fff;">Bitcasino.io</span></span></span></sup></span>.</span></span></span></span></span></a></td><td valign="top" style="font: inherit; color: inherit;"><a rel="ugc" class="ul" href="https://bitcasino.io/"><span style="font-size: 1px !important; line-height: 1.3em;">&nbsp;<br><span style="font-family: arial black;"><span style="font-size: 24pt !important; line-height: 1.3em;"><span style="background-color: #70f;"><span style="color: #70f;">.<b><span style="font-size: 28pt !important; line-height: 1.3em;"><sup><span style="font-size: 11pt !important; line-height: 1.3em;"><span style="color: #fff;">✦</span></span></sup></span></b><span style="font-size: 8pt !important; line-height: 1.3em;"><span style="color: #fff;"><span class="BTC">BTC</span></span></span><b><span style="font-size: 18pt !important; line-height: 1.3em;"><sup><span style="font-size: 5pt !important; line-height: 1.3em;">&nbsp;&nbsp;<span style="color: #fff;">✦&nbsp;&nbsp;</span></span></sup></span></b><span style="font-size: 12pt !important; line-height: 1.3em;"><sup><span style="font-family: sans serif,arial;"><span style="font-size: 14pt !important; line-height: 1.3em;"><b><span style="color: #fff;">Where winners play</span></b></span></span></sup></span><b><span style="font-size: 18pt !important; line-height: 1.3em;"><sup><span style="font-size: 5pt !important; line-height: 1.3em;">&nbsp;&nbsp;<span style="color: #fff;">✦</span></span></sup></span></b><span style="font-size: 38pt !important; line-height: 1.3em;"><sup><span style="font-size: 8pt !important; line-height: 1.3em;"><span style="color: #fff;"><span class="BTC">BTC</span></span></span></sup></span><b><span style="font-size: 2pt !important; line-height: 1.3em;"><sup><span style="font-size: 10pt !important; line-height: 1.3em;"><span style="color: #fff;">✦</span></span></sup></span></b>.</span></span></span></span></span></a></td><td valign="top" style="font: inherit; color: inherit;"><span style="color: transparent;"><span style="font-size: 2pt !important; line-height: 1.3em;">.</span><br><span style="font-size: 8pt !important; line-height: 1.3em;"><span style="background-color: #e61;"><span style="font-size: 4pt !important; line-height: 1.3em;">.</span><span style="color: #fff;">✦</span><span style="font-size: 4pt !important; line-height: 1.3em;">.</span></span></span><br><span style="font-size: 4pt !important; line-height: 1.3em;">.</span><br><span style="font-size: 5pt !important; line-height: 1.3em;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="background-color: #e61;"><span style="font-size: 4pt !important; line-height: 1.3em;">.</span><span style="color: #fff;">✦</span><span style="font-size: 4pt !important; line-height: 1.3em;">.</span></span></span></span></td><td valign="top" style="font: inherit; color: inherit;"><span style="font-size: 2pt !important; line-height: 1.3em;"><span style="color: #e61;"><br><br><br><br><br>████<br>████</span></span></td><td valign="top" style="font: inherit; color: inherit;"><span style="font-size: 2pt !important; line-height: 1.3em;"><span style="color: #000;"><span style="color: #eef;">░░</span>▄████▄<span style="color: #eef;">████████████</span>▄███▄▄<br>░███████▄<span style="color: #eef;">██</span><span style="color: #fff;">▄▄▄▄▄▄</span><span style="color: #eef;">██</span>███████▄<br>████████<span style="color: #fff;">████████████</span>███████<br>▀█████<span style="color: #fff;">███████████████</span><span style="color: #999;">█</span>████▀<br><span style="color: #eef;">░░</span>▀▀█<span style="color: #fff;">█████████████████</span><span style="color: #999;">██</span>█<br><span style="color: #e61;">███</span><span style="color: #ccc;">█</span><span style="color: #fff;">██████</span>███<span style="color: #fff;">████</span>██▄<span style="color: #fff;">███</span><span style="color: #999;">██</span><span style="color: #e61;">████<br>██</span><span style="color: #ccc;">▐█</span><span style="color: #fff;">█████</span>█▀███<span style="color: #fff;">███</span>█▀██▄<span style="color: #fff;">█</span><span style="color: #999;">███</span><span style="color: #e61;">███</span><br><span style="color: transparent;">██</span><span style="color: #ccc;">███</span><span style="color: #fff;">██</span>▄██▄█▀<span style="color: #fff;">████</span>▀████<span style="color: #999;">████</span><br><span style="color: #eef;">░░</span><span style="color: #ccc;">███</span><span style="color: #fff;">███</span>▀▀▀<span style="color: #fff;">█</span>▄▄▄<span style="color: #fff;">██</span>▄<span style="color: #fff;">██</span>▀▀<span style="color: #999;">████</span><br><span style="color: #70f;">██</span><span style="color: #ccc;">▐████<span style="color: #fff;">███</span>███</span>▀███▀<span style="color: #ccc;">██<span style="color: #999;">██████</span><span style="color: #70f;">█████&nbsp; &nbsp; ████<br>███</span>████████████</span>█<span style="color: #ccc;">███<span style="color: #999;">██████</span><span style="color: #70f;">██████&nbsp; &nbsp; ████</span><br><span style="color: transparent;">█████</span>▀██████<span style="color: #999;">██████████▀</span><br><span style="color: transparent;">███████</span>▀▀▀█████<span style="color: #999;">████▀▀</span></span></span></span></td><td valign="top" style="font: inherit; color: inherit;"><tt><span style="color: transparent;"><span style="font-size: 13pt !important; line-height: 1.3em;"><span style="background-color: #000;"><span style="font-size: 4pt !important; line-height: 1.3em;">.</span><span style="color: #e61;">✦</span><span style="font-size: 4pt !important; line-height: 1.3em;">.</span></span><br><span style="font-size: 4pt !important; line-height: 1.3em;">.</span>✦<span style="font-size: 4pt !important; line-height: 1.3em;">.</span><span style="background-color: #70f;"><span style="font-size: 4pt !important; line-height: 1.3em;">.</span><span style="color: #fff;">✦</span><span style="font-size: 4pt !important; line-height: 1.3em;">.</span></span></span></span></tt></td><td valign="top" style="font: inherit; color: inherit;"><a rel="ugc" class="ul" href="https://bitcasino.io/"><span style="font-size: 1px !important; line-height: 1.3em;">&nbsp;<br><span style="font-family: arial black;"><b><span style="font-size: 1pt !important; line-height: 1.3em;"><sup><span style="font-size: 22pt !important; line-height: 1.3em;"><span style="background-color: #e61;"><span style="font-size: 5pt !important; line-height: 1.3em;">&nbsp;</span></span></span></sup></span></b><span style="font-size: 24pt !important; line-height: 1.3em;"><span style="background-color: #e61;"><span style="color: #e61;">..<span style="font-size: 16pt !important; line-height: 1.3em;"><sup><span style="font-family: tahoma,arial black;"><span style="font-size: 11pt !important; line-height: 1.3em;"><span style="color: #fff;">✦ Play now</span></span></span></sup></span>..<span style="font-size: 8pt !important; line-height: 1.3em;">.</span></span></span></span><span style="font-size: 1pt !important; line-height: 1.3em;"><sup><span style="font-size: 22pt !important; line-height: 1.3em;"><span style="background-color: #e61;"><span style="font-size: 5pt !important; line-height: 1.3em;">&nbsp;</span></span></span></sup></span></span></span></a></td><td valign="top" style="font: inherit; color: inherit;"><span style="font-size: 5pt !important; line-height: 1.3em;"><span style="color: #70f;">▄</span> ▀</span></td><td valign="top" style="font: inherit; color: inherit;"><span style="font-size: 10pt !important; line-height: 1.3em;"><span style="color: transparent;">.</span></span><br><span style="font-size: 8pt !important; line-height: 1.3em;"><span style="background-color: #000;"><span style="font-size: 4pt !important; line-height: 1.3em;">.</span><span style="color: #70f;">✦</span><span style="font-size: 4pt !important; line-height: 1.3em;">.</span></span></span></td></tr></tbody></table></div></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg58177187"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=2654005" title="View the profile of zasad@">zasad@</a></b>
+							<div class="smalltext">
+								Legendary<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/legendary.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 2408<br>
+								Merit: 5496<br><br>
+								<div style="overflow: auto; width: 100%;"><img src="urn:scrapbook:download:error:https://bitcointalk.org/useravatars/avatar_2654005.png" alt="" class="avatar" border="0"></div><br>
+								♻️ Automatic Exchange<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=2654005"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="https://bitcointalk.org/index.php?topic=5235612" title=""><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/www_sm.gif" alt="WWW" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg58177187#msg58177187"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_58177187"><a href="https://bitcointalk.org/index.php?topic=5315036.msg58177187#msg58177187">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">October 14, 2021, 10:02:15 AM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns14" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg58177187#msg58177187">#14</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post"><a class="ul" href="https://wormholecrypto.medium.com/binance-smart-chain-launches-on-wormhole-network-9861dd9110eb">https://wormholecrypto.medium.com/binance-smart-chain-launches-on-wormhole-network-9861dd9110eb</a><br>Binance smart chain launches on Wormhole network<br>"We’re excited to announce that support for Binance Smart Chain (BSC) launches today on the Wormhole network! This means that users will be able to bridge both tokens and NFTs seamlessly between the Ethereum &lt;&gt; Solana &lt;&gt; BSC ecosystems!"</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_58177187">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+							<hr width="100%" size="1" class="hrcolor">
+							<div class="signature sig2654005"><div align="center"><table style="font: inherit; color: inherit;"><tbody><tr><td valign="top" style="font: inherit; color: inherit;"><div align="center"><span style="font-size: 2pt !important; line-height: 1.3em;"><span style="font-family: arial black;"><span style="color: #1a7;"><span style="color: #eef;">░░░░</span><span style="color: #1d8;">▄▄██</span>██████████▄<br><span style="color: #1d8;"><span style="color: #eef;">░</span>▄███</span>█████████████▀<br><span style="color: #1c7;">▄█</span><span style="color: #1d8;">███</span>████████████▀<span style="color: #aaa;">▄█▄</span><br><span style="color: #1c7;">▄███</span><span style="color: #1d8;">█</span>███▀▀<span style="color: #eef;">░░</span>▄███▀<span style="color: #aaa;">▄████▄</span><br><span style="color: #1b7;">▄█</span><span style="color: #1c7;">███</span>██▀<span style="color: #eef;">░░░</span>▄███▀<span style="color: #eef;">░</span><span style="color: #aaa;">▀██████▄</span><br><span style="color: #1b7;">█████</span>█▀<span style="color: #eef;">░░</span>▄████▄<span style="color: #eef;">░░░</span><span style="color: #bbb;">▀████</span><span style="color: #aaa;">██</span><br><span style="color: #1b7;">██████</span><span style="color: #eef;">░░</span>▀▀▀▀<span style="color: #eef;">░<span style="color: #aaa;">▄▄▄▄</span>░░</span><span style="color: #bbb;">██████</span><br>██<span style="color: #1b7;">████▄</span><span style="color: #eef;">░░░</span><span style="color: #aaa;">▀████▀<span style="color: #eef;">░░</span>▄█</span><span style="color: #bbb;">█████</span><br>▀██████▄<span style="color: #eef;">░</span><span style="color: #aaa;">▄███▀<span style="color: #eef;">░░░</span>▄██</span><span style="color: #ccc;">███</span><span style="color: #bbb;">█▀</span><br>▀████▀<span style="color: #aaa;">▄████<span style="color: #eef;">░░</span>▄▄███</span><span style="color: #ccc;">████▀</span><br>▀█▀<span style="color: #aaa;">▄████████████<span style="color: #ddd;">███</span><span style="color: #ccc;">█▀</span><br>▄█████████████<span style="color: #ddd;">███▀</span><span style="color: #eef;">░</span><br>▀██████████<span style="color: #ddd;">██▀▀<span style="color: #eef;">░░░░</span></span></span></span></span></span></div></td><td valign="top" style="font: inherit; color: inherit;"></td><td valign="top" style="font: inherit; color: inherit;"><span style="font-size: 3pt !important; line-height: 1.3em;">&nbsp;<br><a rel="ugc" class="ul" href="https://cce.cash/exchange"><span style="font-family: Arial black;"><span style="font-size: 21pt !important; line-height: 1.3em;"><span style="background-color: #001B29;">&nbsp;<span style="font-size: 3pt !important; line-height: 1.3em;"><sup><span style="font-size: 20pt !important; line-height: 1.3em;"><span style="color: #00DEA1;">CCE<span style="color: #fff;">CASH</span></span></span></sup></span>&nbsp;</span></span></span></a></span></td><td valign="top" style="font: inherit; color: inherit;"></td><td valign="top" style="font: inherit; color: inherit;"><div align="center"><a rel="ugc" class="ul" href="https://cce.cash/exchange"><span style="font-family: arial black;"><span style="font-size: 15pt !important; line-height: 1.3em;"><span style="color: #0b8;">INSTANT<span style="color: #023;">&nbsp;CRYPTO&nbsp;EXCHANGE</span></span></span></span><br><span style="font-family: Arial black;"><span style="font-size: 9pt !important; line-height: 1.3em;"><span style="background-color: #0b8;"><span style="color: #fff;">&nbsp;<span style="font-size: 1pt !important; line-height: 1.3em;"><sup><span style="font-family: arial;"><span style="font-size: 8pt !important; line-height: 1.3em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BTC&nbsp;&nbsp;│&nbsp;&nbsp;ETH&nbsp;&nbsp;│&nbsp;&nbsp;TRX&nbsp;&nbsp;│&nbsp;&nbsp;BNB&nbsp;&nbsp;│&nbsp;&nbsp;XMR&nbsp;&nbsp;│&nbsp;&nbsp;SOL&nbsp;&nbsp;│&nbsp;&nbsp;LTC&nbsp;&nbsp;│&nbsp;&nbsp;etc.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></sup></span>&nbsp;</span></span></span></span></a></div></td><td valign="top" style="font: inherit; color: inherit;"></td><td valign="top" style="font: inherit; color: inherit;"><span style="font-size: 3px !important; line-height: 1.3em;">&nbsp;</span><br><a rel="ugc" class="ul" href="https://bitcointalk.org/index.php?topic=5538211.0"><span style="font-family: Arial black;"><span style="font-size: 10pt !important; line-height: 1.3em;"><span style="background-color: #023;"><span style="color: #00DEA1;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 3pt !important; line-height: 1.3em;"><sup><span style="font-size: 8pt !important; line-height: 1.3em;">ANN&nbsp;THREAD</span></sup></span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></span></a><br><span style="font-size: 2pt !important; line-height: 1.3em;">&nbsp;</span><br><a rel="ugc" class="ul" href="https://cce.cash/tutorial"><span style="font-family: Arial black;"><span style="font-size: 10pt !important; line-height: 1.3em;"><span style="background-color: #023;"><span style="color: #fff;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 3pt !important; line-height: 1.3em;"><sup><span style="font-size: 8pt !important; line-height: 1.3em;">TUTORIAL</span></sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></span></a></td></tr></tbody></table></div></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg58392429"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=2851109" title="View the profile of OrdinaryBloke26">OrdinaryBloke26</a></b>
+							<div class="smalltext">
+								Newbie<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 46<br>
+								Merit: 0<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=2851109"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg58392429#msg58392429"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_58392429"><a href="https://bitcointalk.org/index.php?topic=5315036.msg58392429#msg58392429">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">November 10, 2021, 06:31:05 AM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns15" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg58392429#msg58392429">#15</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post">Some great takeaways from the Solana conference in Lisbon.<br><br><b>Brave partners with Solana to integrate it into the browser and make it the default for DApp support</b><br><a rel="ugc" class="ul" href="https://brave.com/solana-partnership/">https://brave.com/solana-partnership/</a><br><br><b>Solana integrates The Graph in indexing move<br></b><a rel="ugc" class="ul" href="https://finance.yahoo.com/news/solana-integrates-graph-indexing-move-122211836.html?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAAIV3gAdLYNnP6SzCJf3BA1B73D7u-DLqWSIlV3OnECLHrIJGHWciAAkhTGSQ3EYMRpeLBw2w7QCmK6KmD2M0J9gH3uQh1EBH3qj_150hw45NOww1xRt1r0gk7kO-f8KjPR920z8gvOQGpw6lOUZRgwuVK1jBmc0xiqQGo_7EBUeD">https://finance.yahoo.com/news/solana-integrates-graph-indexing-move-122211836.html?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAAIV3gAdLYNnP6SzCJf3BA1B73D7u-DLqWSIlV3OnECLHrIJGHWciAAkhTGSQ3EYMRpeLBw2w7QCmK6KmD2M0J9gH3uQh1EBH3qj_150hw45NOww1xRt1r0gk7kO-f8KjPR920z8gvOQGpw6lOUZRgwuVK1jBmc0xiqQGo_7EBUeD</a><br><br><b>Render Network Announces Key Integration With Solana &amp; Metaplex<br></b><a rel="ugc" class="ul" href="https://medium.com/render-token/render-network-announces-key-integration-with-solana-metaplex-65dbd9f93e8b">https://medium.com/render-token/render-network-announces-key-integration-with-solana-metaplex-65dbd9f93e8b</a><br><br><b>Reddit Co-Founder Alexis Ohanian Bets Big On Solana And Web 3.0<br></b><a rel="ugc" class="ul" href="https://www.forbes.com/newsletters/forbescryptoassetadvisor/2021/11/09/reddit-co-founder-alexis-ohanian-bets-big-on-solana-and-web-30/?sh=5d3f0e74e01a&amp;utm_campaign=socialflowForbesMainTwitter&amp;utm_source=ForbesMainTwitter&amp;utm_medium=social">https://www.forbes.com/newsletters/forbescryptoassetadvisor/2021/11/09/reddit-co-founder-alexis-ohanian-bets-big-on-solana-and-web-30/?sh=5d3f0e74e01a&amp;utm_campaign=socialflowForbesMainTwitter&amp;utm_source=ForbesMainTwitter&amp;utm_medium=social</a><br><br><b>Phantom Wallet Preps Mobile Launch After Reaching 1.2 Million Users on Solana<br></b><a rel="ugc" class="ul" href="https://decrypt.co/85563/phantom-wallet-preps-mobile-launch-reaching-million-users-solana">https://decrypt.co/85563/phantom-wallet-preps-mobile-launch-reaching-million-users-solana</a></div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_58392429">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg58489411"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=3112410" title="View the profile of solana">solana</a></b> <span title="This member is the topic-starter" style="cursor: help;">(OP)</span>
+							<div class="smalltext">
+								Newbie<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 8<br>
+								Merit: 0<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=3112410"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg58489411#msg58489411"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_58489411"><a href="https://bitcointalk.org/index.php?topic=5315036.msg58489411#msg58489411">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">November 21, 2021, 03:03:19 AM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns16" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg58489411#msg58489411">#16</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post"><div class="quoteheader"><a href="https://bitcointalk.org/index.php?topic=5315036.msg58392429#msg58392429">Quote from: OrdinaryBloke26 on November 10, 2021, 06:31:05 AM</a></div><div class="quote">Some great takeaways from the Solana conference in Lisbon.<br><br><b>Brave partners with Solana to integrate it into the browser and make it the default for DApp support</b><br><a rel="ugc" class="ul" href="https://brave.com/solana-partnership/">https://brave.com/solana-partnership/</a><br><br><b>Solana integrates The Graph in indexing move<br></b><a rel="ugc" class="ul" href="https://finance.yahoo.com/news/solana-integrates-graph-indexing-move-122211836.html?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAAIV3gAdLYNnP6SzCJf3BA1B73D7u-DLqWSIlV3OnECLHrIJGHWciAAkhTGSQ3EYMRpeLBw2w7QCmK6KmD2M0J9gH3uQh1EBH3qj_150hw45NOww1xRt1r0gk7kO-f8KjPR920z8gvOQGpw6lOUZRgwuVK1jBmc0xiqQGo_7EBUeD">https://finance.yahoo.com/news/solana-integrates-graph-indexing-move-122211836.html?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAAIV3gAdLYNnP6SzCJf3BA1B73D7u-DLqWSIlV3OnECLHrIJGHWciAAkhTGSQ3EYMRpeLBw2w7QCmK6KmD2M0J9gH3uQh1EBH3qj_150hw45NOww1xRt1r0gk7kO-f8KjPR920z8gvOQGpw6lOUZRgwuVK1jBmc0xiqQGo_7EBUeD</a><br><br><b>Render Network Announces Key Integration With Solana &amp; Metaplex<br></b><a rel="ugc" class="ul" href="https://medium.com/render-token/render-network-announces-key-integration-with-solana-metaplex-65dbd9f93e8b">https://medium.com/render-token/render-network-announces-key-integration-with-solana-metaplex-65dbd9f93e8b</a><br><br><b>Reddit Co-Founder Alexis Ohanian Bets Big On Solana And Web 3.0<br></b><a rel="ugc" class="ul" href="https://www.forbes.com/newsletters/forbescryptoassetadvisor/2021/11/09/reddit-co-founder-alexis-ohanian-bets-big-on-solana-and-web-30/?sh=5d3f0e74e01a&amp;utm_campaign=socialflowForbesMainTwitter&amp;utm_source=ForbesMainTwitter&amp;utm_medium=social">https://www.forbes.com/newsletters/forbescryptoassetadvisor/2021/11/09/reddit-co-founder-alexis-ohanian-bets-big-on-solana-and-web-30/?sh=5d3f0e74e01a&amp;utm_campaign=socialflowForbesMainTwitter&amp;utm_source=ForbesMainTwitter&amp;utm_medium=social</a><br><br><b>Phantom Wallet Preps Mobile Launch After Reaching 1.2 Million Users on Solana<br></b><a rel="ugc" class="ul" href="https://decrypt.co/85563/phantom-wallet-preps-mobile-launch-reaching-million-users-solana">https://decrypt.co/85563/phantom-wallet-preps-mobile-launch-reaching-million-users-solana</a><br></div><br>Did you make it to the conference?&nbsp; &nbsp;I was there, and never saw one like it.&nbsp; &nbsp;It kind of took over the whole City.&nbsp; And I could not believe how beautiful Lisbon was.&nbsp; Can't wait to come back.&nbsp; &nbsp;Met a huge number of incredible, brilliant people.</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_58489411">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg58530543"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=1109076" title="View the profile of Bohdan820">Bohdan820</a></b>
+							<div class="smalltext">
+								Hero Member<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 882<br>
+								Merit: 628<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=1109076"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg58530543#msg58530543"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_58530543"><a href="https://bitcointalk.org/index.php?topic=5315036.msg58530543#msg58530543">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">November 25, 2021, 05:32:06 PM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns17" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg58530543#msg58530543">#17</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post"><b>Solana Names Service</b><br><br>The principle of operation is similar to ENS:<br>1. Choose a domain name.<br>2. Start an auction.<br>3. Place your bet. Minimum - 2.5 FIDA ≈ $ 22.<br>4. Wait 3 days and pick up * name * .sol, if no one outbid<br><br>After the name auction, get ready to host Solana. However, not all services support the feature.<br><span style="text-decoration: underline;">Phantom supports.</span><br><br>Unlike ENS, domains are bought forever.<br>Resell is possible, but a commission from 1% to 5% is charged for it. Komsa is calculated on the basis of the transaction amount.<br><br>Create a unique domain for yourself - <a class="ul" href="https://naming.bonfida.org/#/auctions">naming.bonfida.org</a><br>Source: <a class="ul" href="https://t.me/notothemoon/1517">https://t.me/notothemoon/1517</a></div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_58530543">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg58569764"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=1109076" title="View the profile of Bohdan820">Bohdan820</a></b>
+							<div class="smalltext">
+								Hero Member<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 882<br>
+								Merit: 628<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=1109076"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg58569764#msg58569764"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_58569764"><a href="https://bitcointalk.org/index.php?topic=5315036.msg58569764#msg58569764">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">November 29, 2021, 03:01:20 PM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns18" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg58569764#msg58569764">#18</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post"><b>An interesting new tool called "farming strategies" has appeared on the francium platform</b><br><br><a class="ul" href="https://francium.io/app/strategies/farming">https://francium.io/app/strategies/farming</a><br>People have sent over $ 23,070,441 TVL to this strategy<br>Pseudo-Delta Neutral Hedging Strategy&nbsp; - <a class="ul" href="https://docs.francium.io/strategy-guide/neutral-hedge-strategy">https://docs.francium.io/strategy-guide/neutral-hedge-strategy</a><br><br>I would like to know what you think about this?</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_58569764">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg58580056"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=933342" title="View the profile of Kitaiev">Kitaiev</a></b>
+							<div class="smalltext">
+								Sr. Member<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 1064<br>
+								Merit: 300<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=933342"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="https://www.altcoinstalks.com/index.php?action=profile;u=78839" title="altcoinstalks"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/www_sm.gif" alt="WWW" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg58580056#msg58580056"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_58580056"><a href="https://bitcointalk.org/index.php?topic=5315036.msg58580056#msg58580056">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">November 30, 2021, 03:57:08 PM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns19" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg58580056#msg58580056">#19</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post"><b>BridgeSplit: splitting NFT into molecules</b><br><br>BridgeSplit is a *NFT fractionalization platform.<br>Closest analogue: <a class="ul" href="http://url=https//fractional.art/">fractional.art</a>.<br><br>They <a class="ul" href="https://twitter.com/bridgesplit/status/1462968251709808644">started</a> on the Solana devnet. Serum marketplace was pushed into the foundation.<br>The main innovation is the vote of all holders for the possibility and price of the full redemption of NFTs.<br>For devnet they give test pictures and SOL.<br><br>The launch date is unknown.<br>Links:<br><a class="ul" href="https://devnet.bridgesplit.com/">https://devnet.bridgesplit.com</a><br><a class="ul" href="https://twitter.com/bridgesplit">https://twitter.com/bridgesplit</a><br><a class="ul" href="https://t.me/notothemoon/1533">https://t.me/notothemoon/1533</a></div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_58580056">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr><tr><td class="msgcl1">
+		<a name="msg58588401"></a>
+		<table width="100%" cellpadding="3" cellspacing="0" border="0">
+			<tbody><tr><td class="windowbg2">
+				<table width="100%" cellpadding="5" cellspacing="0" style="table-layout: fixed;">
+					<tbody><tr>
+								<td valign="top" width="16%" rowspan="2" style="overflow: hidden;" class="poster_info">
+							<b><a href="https://bitcointalk.org/index.php?action=profile;u=1822539" title="View the profile of Mofatness">Mofatness</a></b>
+							<div class="smalltext">
+								Newbie<br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/star.gif" alt="*" border="0"><br>
+								<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/useroff.gif" alt="Offline" border="0" style="margin-top: 2px;"><span class="smalltext"> Offline</span><br><br>
+								Activity: 133<br>
+								Merit: 0<br><br>
+								
+								
+								
+								<br>
+								<a href="https://bitcointalk.org/index.php?action=profile;u=1822539"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/icons/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="https://www.safecoin.org/" title="Official SafeCoin Website"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/www_sm.gif" alt="WWW" border="0"></a><br>
+							</div>
+						</td>
+								<td valign="top" width="85%" height="100%" style="padding: 2px;" class="td_headerandpost with_column_bug">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle" width="26"><a href="https://bitcointalk.org/index.php?topic=5315036.msg58588401#msg58588401"><img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/post/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+												<div style="font-weight: bold;" class="subject" id="subject_58588401"><a href="https://bitcointalk.org/index.php?topic=5315036.msg58588401#msg58588401">Re: [ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></div>
+												<div class="smalltext">December 01, 2021, 12:44:50 PM</div></td>
+										  <td align="right" valign="middle" height="20" style="font-size: smaller; padding-top: 4px;" class="td_buttons"><div id="ignmsgbttns20" style="visibility: visible;"> &nbsp;<a class="message_number" style="vertical-align: middle;" href="https://bitcointalk.org/index.php?topic=5315036.msg58588401#msg58588401">#20</a>
+		 </div>
+								</td>
+							</tr></tbody></table>
+									 <hr width="100%" size="1" class="hrcolor" style="margin-top: 4px;">
+							<div class="post"><a rel="ugc" class="ul" href="https://old.reddit.com/r/solana/comments/r5pl2z/grayscale_the_worlds_largest_digital_currency/">https://old.reddit.com/r/solana/comments/r5pl2z/grayscale_the_worlds_largest_digital_currency/</a><br><br>Grayscale adding Solana Trust!</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="bottom" class="smalltext" width="85%">
+							<table width="100%" border="0" style="table-layout: fixed;"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td valign="bottom" class="smalltext" id="modified_58588401">
+								</td>
+								<td align="right" valign="bottom" class="smalltext">
+									<img src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/ip.gif" alt="" border="0">
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 0 0 1px 0;"></td></tr>
+</tbody></table>
+<a name="lastPost"></a>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tbody><tr>
+		<td class="middletext">Pages:  [<b>1</b>] <a class="navPages" href="https://bitcointalk.org/index.php?topic=5315036.20">2</a> <span class="prevnext"><a class="navPages" href="https://bitcointalk.org/index.php?topic=5315036.20">»</a> </span>&nbsp;<a href="https://bitcointalk.org/index.php?topic=5315036.0;all">All</a> </td>
+		<td align="right" style="padding-right: 1ex;">
+			<table cellpadding="0" cellspacing="0">
+				<tbody><tr>
+					
+		<td class="maintab_first">&nbsp;</td>
+		<td class="maintab_back"><a href="https://bitcointalk.org/index.php?action=printpage;topic=5315036.0" target="_blank">Print</a></td>
+		<td class="maintab_last">&nbsp;</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 1ex;">
+		<tbody><tr>
+				<td valign="top"><div class="nav" style="font-size: smaller; margin-bottom: 2ex; margin-top: 2ex;"><b><a href="https://bitcointalk.org/index.php" class="nav">Bitcoin Forum</a></b>&nbsp;&gt;&nbsp;<b><a href="https://bitcointalk.org/index.php#6" class="nav">Alternate cryptocurrencies</a></b>&nbsp;&gt;&nbsp;<b><a href="https://bitcointalk.org/index.php?board=159.0" class="nav">Announcements (Altcoins)</a></b>&nbsp;&gt;&nbsp;<b><a href="" class="nav">[ANN][POH][MULTITHREADING][SOL] Solana - The world's most performant blockchain</a></b></div></td> 
+				<td valign="top" align="right" class="nav"> <a href="https://bitcointalk.org/index.php?topic=5315036.0;prev_next=prev#new">« previous topic</a> <a href="https://bitcointalk.org/index.php?topic=5315036.0;prev_next=next#new">next topic »</a></td>
+		</tr>
+</tbody></table>
+	<table cellpadding="0" cellspacing="0" border="0" style="margin-left: 1ex;">
+		<tbody><tr>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody></table>
+</form>
+<div class="tborder"><div class="titlebg2" style="padding: 4px;" align="right">
+	<form action="https://bitcointalk.org/index.php" method="get" accept-charset="ISO-8859-1" style="padding:0; margin: 0;">
+		<span class="smalltext">Jump to:</span>
+		<select name="jumpto" id="jumpto">
+			<option value="">Please select a destination:</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#1">Bitcoin</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=1.0"> =&gt; Bitcoin Discussion</option>
+			<option value="?board=74.0"> ===&gt; Legal</option>
+			<option value="?board=77.0"> ===&gt; Press</option>
+			<option value="?board=86.0"> ===&gt; Meetups</option>
+			<option value="?board=87.0"> ===&gt; Important Announcements</option>
+			<option value="?board=6.0"> =&gt; Development &amp; Technical Discussion</option>
+			<option value="?board=37.0"> ===&gt; Wallet software</option>
+			<option value="?board=98.0"> =====&gt; Electrum</option>
+			<option value="?board=100.0"> =====&gt; Bitcoin Wallet for Android</option>
+			<option value="?board=138.0"> =====&gt; BitcoinJ</option>
+			<option value="?board=97.0"> =====&gt; Armory</option>
+			<option value="?board=231.0"> =====&gt; Mycelium</option>
+			<option value="?board=261.0"> =====&gt; Hardware wallets</option>
+			<option value="?board=14.0"> =&gt; Mining</option>
+			<option value="?board=40.0"> ===&gt; Mining support</option>
+			<option value="?board=41.0"> ===&gt; Pools</option>
+			<option value="?board=42.0"> ===&gt; Mining software (miners)</option>
+			<option value="?board=76.0"> ===&gt; Hardware</option>
+			<option value="?board=137.0"> =====&gt; Group buys</option>
+			<option value="?board=81.0"> ===&gt; Mining speculation</option>
+			<option value="?board=4.0"> =&gt; Bitcoin Technical Support</option>
+			<option value="?board=12.0"> =&gt; Project Development</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#3">Economy</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=7.0"> =&gt; Economics</option>
+			<option value="?board=57.0"> ===&gt; Speculation</option>
+			<option value="?board=5.0"> =&gt; Marketplace</option>
+			<option value="?board=51.0"> ===&gt; Goods</option>
+			<option value="?board=75.0"> =====&gt; Computer hardware</option>
+			<option value="?board=93.0"> =====&gt; Digital goods</option>
+			<option value="?board=234.0"> =======&gt; Invites &amp; Accounts</option>
+			<option value="?board=217.0"> =====&gt; Collectibles</option>
+			<option value="?board=52.0"> ===&gt; Services</option>
+			<option value="?board=53.0"> ===&gt; Currency exchange</option>
+			<option value="?board=56.0"> ===&gt; Gambling</option>
+			<option value="?board=71.0"> =====&gt; Games and rounds</option>
+			<option value="?board=207.0"> =====&gt; Investor-based games</option>
+			<option value="?board=228.0"> =====&gt; Gambling discussion</option>
+			<option value="?board=65.0"> ===&gt; Lending</option>
+			<option value="?board=88.0"> =====&gt; Long-term offers</option>
+			<option value="?board=78.0"> ===&gt; Securities</option>
+			<option value="?board=73.0"> ===&gt; Auctions</option>
+			<option value="?board=84.0"> ===&gt; Service Announcements</option>
+			<option value="?board=212.0"> =====&gt; Micro Earnings</option>
+			<option value="?board=85.0"> ===&gt; Service Discussion</option>
+			<option value="?board=222.0"> =====&gt; Web Wallets</option>
+			<option value="?board=223.0"> =====&gt; Exchanges</option>
+			<option value="?board=8.0"> =&gt; Trading Discussion</option>
+			<option value="?board=83.0"> ===&gt; Scam Accusations</option>
+			<option value="?board=129.0"> ===&gt; Reputation</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#4">Other</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=24.0"> =&gt; Meta</option>
+			<option value="?board=168.0"> ===&gt; Bitcoin Wiki</option>
+			<option value="?board=34.0"> =&gt; Politics &amp; Society</option>
+			<option value="?board=39.0"> =&gt; Beginners &amp; Help</option>
+			<option value="?board=9.0"> =&gt; Off-topic</option>
+			<option value="?board=250.0"> =&gt; Serious discussion</option>
+			<option value="?board=251.0"> ===&gt; Ivory Tower</option>
+			<option value="?board=59.0"> =&gt; Archival</option>
+			<option value="?board=167.0"> ===&gt; New forum software</option>
+			<option value="?board=92.0"> ===&gt; Корзина</option>
+			<option value="?board=44.0"> ===&gt; CPU/GPU Bitcoin mining hardware</option>
+			<option value="?board=17.0"> ===&gt; Chinese students</option>
+			<option value="?board=25.0"> ===&gt; Obsolete (buying)</option>
+			<option value="?board=26.0"> ===&gt; Obsolete (selling)</option>
+			<option value="?board=99.0"> ===&gt; MultiBit</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#6">Alternate cryptocurrencies</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=67.0"> =&gt; Altcoin Discussion</option>
+			<option value="?board=159.0" selected="selected"> =&gt; Announcements (Altcoins)</option>
+			<option value="?board=240.0"> ===&gt; Tokens (Altcoins)</option>
+			<option value="?board=160.0"> =&gt; Mining (Altcoins)</option>
+			<option value="?board=199.0"> ===&gt; Pools (Altcoins)</option>
+			<option value="?board=161.0"> =&gt; Marketplace (Altcoins)</option>
+			<option value="?board=197.0"> ===&gt; Service Announcements (Altcoins)</option>
+			<option value="?board=198.0"> ===&gt; Service Discussion (Altcoins)</option>
+			<option value="?board=238.0"> ===&gt; Bounties (Altcoins)</option>
+			<option value="?board=224.0"> =&gt; Speculation (Altcoins)</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#5">Local</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=241.0"> =&gt; العربية (Arabic)</option>
+			<option value="?board=242.0"> ===&gt; العملات البديلة (Altcoins)</option>
+			<option value="?board=265.0"> =====&gt; النقاشات</option>
+			<option value="?board=253.0"> ===&gt; إستفسارات و أسئلة المبتدئين</option>
+			<option value="?board=266.0"> ===&gt; التعدين</option>
+			<option value="?board=267.0"> ===&gt; النقاشات الأخرى</option>
+			<option value="?board=271.0"> ===&gt; منصات التبادل</option>
+			<option value="?board=191.0"> =&gt; Bahasa Indonesia (Indonesian)</option>
+			<option value="?board=193.0"> ===&gt; Marketplace (Bahasa Indonesia)</option>
+			<option value="?board=194.0"> ===&gt; Mining (Bahasa Indonesia)</option>
+			<option value="?board=192.0"> ===&gt; Altcoins (Bahasa Indonesia)</option>
+			<option value="?board=276.0"> ===&gt; Trading dan Spekulasi</option>
+			<option value="?board=277.0"> ===&gt; Ekonomi, Politik, dan Budaya</option>
+			<option value="?board=278.0"> ===&gt; Topik Lainnya</option>
+			<option value="?board=27.0"> =&gt; Español (Spanish)</option>
+			<option value="?board=31.0"> ===&gt; Mercado y Economía</option>
+			<option value="?board=202.0"> =====&gt; Servicios</option>
+			<option value="?board=203.0"> =====&gt; Trading y especulación</option>
+			<option value="?board=32.0"> ===&gt; Hardware y Minería</option>
+			<option value="?board=33.0"> ===&gt; Esquina Libre</option>
+			<option value="?board=101.0"> ===&gt; Mercadillo</option>
+			<option value="?board=102.0"> =====&gt; Mexico</option>
+			<option value="?board=103.0"> =====&gt; Argentina</option>
+			<option value="?board=104.0"> =====&gt; España</option>
+			<option value="?board=105.0"> =====&gt; Centroamerica y Caribe</option>
+			<option value="?board=130.0"> ===&gt; Primeros pasos y ayuda</option>
+			<option value="?board=151.0"> ===&gt; Altcoins (criptomonedas alternativas)</option>
+			<option value="?board=177.0"> =====&gt; Minería de altcoins</option>
+			<option value="?board=204.0"> =====&gt; Servicios</option>
+			<option value="?board=254.0"> =====&gt; Tokens (Español)</option>
+			<option value="?board=30.0"> =&gt; 中文 (Chinese)</option>
+			<option value="?board=117.0"> ===&gt; 跳蚤市场</option>
+			<option value="?board=118.0"> ===&gt; 山寨币</option>
+			<option value="?board=119.0"> ===&gt; 媒体</option>
+			<option value="?board=146.0"> ===&gt; 挖矿</option>
+			<option value="?board=196.0"> ===&gt; 离题万里</option>
+			<option value="?board=201.0"> =&gt; Hrvatski (Croatian)</option>
+			<option value="?board=220.0"> ===&gt; Trgovina</option>
+			<option value="?board=221.0"> ===&gt; Altcoins (Hrvatski)</option>
+			<option value="?board=273.0"> =====&gt; Announcements (Hrvatski)</option>
+			<option value="?board=272.0"> ===&gt; Off-topic (Hrvatski)</option>
+			<option value="?board=16.0"> =&gt; Deutsch (German)</option>
+			<option value="?board=62.0"> ===&gt; Anfänger und Hilfe</option>
+			<option value="?board=60.0"> ===&gt; Mining (Deutsch)</option>
+			<option value="?board=61.0"> ===&gt; Trading und Spekulation</option>
+			<option value="?board=63.0"> ===&gt; Projektentwicklung</option>
+			<option value="?board=64.0"> ===&gt; Off-Topic (Deutsch)</option>
+			<option value="?board=139.0"> ===&gt; Treffen</option>
+			<option value="?board=140.0"> ===&gt; Presse </option>
+			<option value="?board=152.0"> ===&gt; Altcoins (Deutsch)</option>
+			<option value="?board=270.0"> =====&gt; Announcements (Deutsch)</option>
+			<option value="?board=269.0"> ===&gt; Marktplatz</option>
+			<option value="?board=141.0"> =====&gt; Auktionen</option>
+			<option value="?board=36.0"> =====&gt; Suche</option>
+			<option value="?board=35.0"> =====&gt; Biete</option>
+			<option value="?board=120.0"> =&gt; Ελληνικά (Greek)</option>
+			<option value="?board=136.0"> ===&gt; Αγορά</option>
+			<option value="?board=195.0"> ===&gt; Mining Discussion (Ελληνικά)</option>
+			<option value="?board=179.0"> ===&gt; Altcoins (Ελληνικά)</option>
+			<option value="?board=246.0"> =====&gt; Altcoin Announcements (Ελληνικά)</option>
+			<option value="?board=247.0"> =====&gt; Altcoin Mining (Ελληνικά)</option>
+			<option value="?board=95.0"> =&gt; עברית (Hebrew)</option>
+			<option value="?board=13.0"> =&gt; Français</option>
+			<option value="?board=183.0"> ===&gt; Actualité et News</option>
+			<option value="?board=208.0"> ===&gt; Débutants</option>
+			<option value="?board=47.0"> ===&gt; Discussions générales et utilisation du Bitcoin</option>
+			<option value="?board=48.0"> ===&gt; Mining et Hardware</option>
+			<option value="?board=187.0"> ===&gt; Économie et spéculation</option>
+			<option value="?board=49.0"> ===&gt; Place de marché</option>
+			<option value="?board=209.0"> =====&gt; Échanges</option>
+			<option value="?board=210.0"> =====&gt; Produits et services</option>
+			<option value="?board=211.0"> =====&gt; Petites annonces</option>
+			<option value="?board=188.0"> ===&gt; Le Bitcoin et la loi</option>
+			<option value="?board=54.0"> ===&gt; Wiki, documentation et traduction</option>
+			<option value="?board=186.0"> ===&gt; Développement et technique</option>
+			<option value="?board=184.0"> ===&gt; Vos sites et projets</option>
+			<option value="?board=50.0"> ===&gt; Hors-sujet</option>
+			<option value="?board=149.0"> ===&gt; Altcoins (Français)</option>
+			<option value="?board=258.0"> =====&gt; Annonces</option>
+			<option value="?board=89.0"> =&gt; India</option>
+			<option value="?board=121.0"> ===&gt; Mining (India)</option>
+			<option value="?board=122.0"> ===&gt; Marketplace (India)</option>
+			<option value="?board=123.0"> ===&gt; Regional Languages (India)</option>
+			<option value="?board=124.0"> ===&gt; Press &amp; News from India</option>
+			<option value="?board=125.0"> ===&gt; Alt Coins (India)</option>
+			<option value="?board=126.0"> ===&gt; Buyer/ Seller Reputations (India)</option>
+			<option value="?board=127.0"> ===&gt; Off-Topic (India)</option>
+			<option value="?board=28.0"> =&gt; Italiano (Italian)</option>
+			<option value="?board=153.0"> ===&gt; Guide (Italiano)</option>
+			<option value="?board=169.0"> ===&gt; Progetti</option>
+			<option value="?board=205.0"> ===&gt; Discussioni avanzate e sviluppo</option>
+			<option value="?board=175.0"> ===&gt; Trading, analisi e speculazione</option>
+			<option value="?board=170.0"> ===&gt; Mercato</option>
+			<option value="?board=46.0"> =====&gt; Mercato valute</option>
+			<option value="?board=107.0"> =====&gt; Beni</option>
+			<option value="?board=171.0"> =====&gt; Servizi</option>
+			<option value="?board=172.0"> =====&gt; Esercizi commerciali</option>
+			<option value="?board=173.0"> =====&gt; Hardware/Mining (Italiano)</option>
+			<option value="?board=200.0"> =====&gt; Gambling (Italiano)</option>
+			<option value="?board=162.0"> ===&gt; Accuse scam/truffe</option>
+			<option value="?board=115.0"> ===&gt; Mining (Italiano)</option>
+			<option value="?board=132.0"> ===&gt; Alt-Currencies (Italiano)</option>
+			<option value="?board=176.0"> =====&gt; Annunci</option>
+			<option value="?board=144.0"> ===&gt; Raduni/Meeting (Italiano)</option>
+			<option value="?board=165.0"> ===&gt; Crittografia e decentralizzazione</option>
+			<option value="?board=145.0"> ===&gt; Off-Topic (Italiano)</option>
+			<option value="?board=252.0"> =&gt; 日本語 (Japanese)</option>
+			<option value="?board=255.0"> ===&gt; アルトコイン</option>
+			<option value="?board=79.0"> =&gt; Nederlands (Dutch)</option>
+			<option value="?board=80.0"> ===&gt; Markt</option>
+			<option value="?board=94.0"> ===&gt; Gokken/lotterijen</option>
+			<option value="?board=116.0"> ===&gt; Mining (Nederlands)</option>
+			<option value="?board=143.0"> ===&gt; Beurzen</option>
+			<option value="?board=147.0"> ===&gt; Alt Coins (Nederlands)</option>
+			<option value="?board=148.0"> ===&gt; Off-topic (Nederlands)</option>
+			<option value="?board=150.0"> ===&gt; Meetings (Nederlands)</option>
+			<option value="?board=275.0"> =&gt; Nigeria (Naija)</option>
+			<option value="?board=279.0"> ===&gt; Politics and society (Naija)</option>
+			<option value="?board=280.0"> ===&gt; Off-topic (Naija)</option>
+			<option value="?board=82.0"> =&gt; 한국어 (Korean)</option>
+			<option value="?board=182.0"> ===&gt; 대체코인 Alt Coins (한국어)</option>
+			<option value="?board=219.0"> =&gt; Pilipinas</option>
+			<option value="?board=243.0"> ===&gt; Altcoins (Pilipinas)</option>
+			<option value="?board=260.0"> =====&gt; Altcoin Announcements (Pilipinas)</option>
+			<option value="?board=268.0"> ===&gt; Pamilihan</option>
+			<option value="?board=274.0"> ===&gt; Others (Pilipinas)</option>
+			<option value="?board=142.0"> =&gt; Polski</option>
+			<option value="?board=163.0"> ===&gt; Tablica ogłoszeń</option>
+			<option value="?board=164.0"> ===&gt; Alternatywne kryptowaluty</option>
+			<option value="?board=263.0"> =====&gt; Nowe kryptowaluty i tokeny</option>
+			<option value="?board=264.0"> =====&gt; Tablica ogłoszeń (altcoiny)</option>
+			<option value="?board=29.0"> =&gt; Português (Portuguese)</option>
+			<option value="?board=131.0"> ===&gt; Primeiros Passos (Iniciantes)</option>
+			<option value="?board=69.0"> ===&gt; Economia &amp; Mercado</option>
+			<option value="?board=70.0"> ===&gt; Mineração em Geral</option>
+			<option value="?board=206.0"> ===&gt; Desenvolvimento &amp; Discussões Técnicas</option>
+			<option value="?board=181.0"> ===&gt; Criptomoedas Alternativas</option>
+			<option value="?board=134.0"> ===&gt; Brasil</option>
+			<option value="?board=135.0"> ===&gt; Portugal</option>
+			<option value="?board=10.0"> =&gt; Русский (Russian)</option>
+			<option value="?board=22.0"> ===&gt; Новички</option>
+			<option value="?board=23.0"> ===&gt; Бизнес</option>
+			<option value="?board=236.0"> =====&gt; Барахолка</option>
+			<option value="?board=237.0"> =====&gt; Обменники</option>
+			<option value="?board=90.0"> ===&gt; Идеи</option>
+			<option value="?board=66.0"> ===&gt; Кодеры</option>
+			<option value="?board=21.0"> ===&gt; Майнеры</option>
+			<option value="?board=91.0"> ===&gt; Политика</option>
+			<option value="?board=20.0"> ===&gt; Трейдеры</option>
+			<option value="?board=72.0"> ===&gt; Альтернативные криптовалюты</option>
+			<option value="?board=248.0"> =====&gt; Токены</option>
+			<option value="?board=256.0"> =====&gt; Бayнти и aиpдpoпы</option>
+			<option value="?board=55.0"> ===&gt; Хайпы</option>
+			<option value="?board=185.0"> ===&gt; Работа</option>
+			<option value="?board=18.0"> ===&gt; Разное</option>
+			<option value="?board=262.0"> ===&gt; Oбcyждeниe Bitcoin</option>
+			<option value="?board=128.0"> =====&gt; Новости</option>
+			<option value="?board=19.0"> =====&gt; Юристы</option>
+			<option value="?board=108.0"> =&gt; Română (Romanian)</option>
+			<option value="?board=109.0"> ===&gt; Anunturi importante</option>
+			<option value="?board=110.0"> ===&gt; Offtopic</option>
+			<option value="?board=111.0"> ===&gt; Market</option>
+			<option value="?board=257.0"> =====&gt; Discutii Servicii</option>
+			<option value="?board=166.0"> ===&gt; Minerit</option>
+			<option value="?board=112.0"> ===&gt; Tutoriale</option>
+			<option value="?board=113.0"> ===&gt; Bine ai venit!</option>
+			<option value="?board=114.0"> ===&gt; Presa</option>
+			<option value="?board=259.0"> ===&gt; Altcoins (Monede Alternative)</option>
+			<option value="?board=178.0"> =====&gt; Anunturi Monede Alternative</option>
+			<option value="?board=45.0"> =&gt; Skandinavisk</option>
+			<option value="?board=133.0"> =&gt; Türkçe (Turkish)</option>
+			<option value="?board=180.0"> ===&gt; Bitcoin Haberleri</option>
+			<option value="?board=155.0"> ===&gt; Pazar Alanı</option>
+			<option value="?board=156.0"> ===&gt; Madencilik</option>
+			<option value="?board=189.0"> ===&gt; Ekonomi</option>
+			<option value="?board=190.0"> ===&gt; Servisler</option>
+			<option value="?board=232.0"> =====&gt; Fonlar</option>
+			<option value="?board=229.0"> ===&gt; Proje Geliştirme</option>
+			<option value="?board=157.0"> ===&gt; Alternatif Kripto-Paralar</option>
+			<option value="?board=235.0"> =====&gt; Madencilik (Alternatif Kripto-Paralar)</option>
+			<option value="?board=239.0"> =====&gt; Duyurular (Alternatif Kripto-Paralar)</option>
+			<option value="?board=158.0"> ===&gt; Konu Dışı</option>
+			<option value="?board=174.0"> ===&gt; Yeni Başlayanlar &amp; Yardım</option>
+			<option value="?board=230.0"> ===&gt; Buluşmalar</option>
+			<option value="?board=11.0"> =&gt; Other languages/locations</option>
+		</select>&nbsp;
+		<input type="button" value="go">
+	</form>
+</div></div><br>
+	</div>
+
+	<div id="footerarea" style="text-align: center; padding-bottom: 1ex;">
+		
+		<table cellspacing="0" cellpadding="3" border="0" align="center" width="100%">
+			<tbody><tr>
+				<td width="28%" valign="middle" align="right">
+					<a href="http://www.mysql.com/" target="_blank"><img id="powered-mysql" src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/powered-mysql.gif" alt="Powered by MySQL" width="54" height="20" style="margin: 5px 16px;"></a>
+					<a href="http://www.php.net/" target="_blank"><img id="powered-php" src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/powered-php.gif" alt="Powered by PHP" width="54" height="20" style="margin: 5px 16px;"></a>
+				</td>
+				<td valign="middle" align="center" style="white-space: nowrap;">
+					
+		<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana, Arial, sans-serif;"><a href="http://www.simplemachines.org/" title="Simple Machines Forum" target="_blank">Powered by SMF 1.1.19</a> | 
+<a href="http://www.simplemachines.org/about/copyright.php" title="Free Forum Software" target="_blank">SMF © 2006-2009, Simple Machines</a>
+		</span>
+				</td>
+				<td width="28%" valign="middle" align="left">
+					<a href="http://validator.w3.org/check/referer" target="_blank"><img id="valid-xhtml10" src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/valid-xhtml10.gif" alt="Valid XHTML 1.0!" width="54" height="20" style="margin: 5px 16px;"></a>
+					<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img id="valid-css" src="urn:scrapbook:download:error:https://bitcointalk.org/Themes/custom1/images/valid-css.gif" alt="Valid CSS!" width="54" height="20" style="margin: 5px 16px;"></a>
+				</td>
+			</tr>
+		</tbody></table>
+		
+	</div>
+	<div id="ajax_in_progress" style="display: none;">Loading...</div>
+</body></html>
